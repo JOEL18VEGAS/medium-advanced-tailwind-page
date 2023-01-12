@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Joel Vegas</title>
+    <!-- paga icon -->
+    <link rel="shortcut icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.uMuKLU0wEE6K2IAa-7Z_JwHaHa%26pid%3DApi&f=1&ipt=586005b8790dd2883194d177feaa82347d28eb67945ee099b61391686ed53704&ipo=images" type="image/x-icon">
+</head>
+
+<body>
+    <!-- HEADER SECTION Start-->
+    <header>
+        <nav class="md:flex md:justify-between md:items-center mt-5 pb-3">
+            <div class=" flex justify-between items-center">
+                <span>
+                    <img class=" h-10  ml-5"
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.uMuKLU0wEE6K2IAa-7Z_JwHaHa%26pid%3DApi&f=1&ipt=586005b8790dd2883194d177feaa82347d28eb67945ee099b61391686ed53704&ipo=images"
+                        alt="logo">
+                </span>
+                <span class="text-4xl mr-5 md:hidden">
+                    <i class='bx bx-menu' onclick="sidebar(this)"></i>
+                </span>
+
+            </div>
+            <ul
+                class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-7  md:opacity-100 opacity-0 top[-400px] mr-5 md:space-x-10 transition-all ease-out duration-700 ">
+                <li>
+                    <a href="">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Gallery
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Login
+                    </a>
+                </li>
+                <li class="bg-blue-700 px-4 py-1 rounded-md text-white">
+                    <a href="">
+                        Ready
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        <script>
+            function sidebar(e) {
+                let list = document.querySelector("ul");
+                e.name === "menu"
+                    ? ((e.name = "close"),
+                        list.classList.add("top-[80px]"),
+                        list.classList.add("opacity-100"))
+                    : ((e.name = "menu"),
+                        list.classList.remove("top-[80px]"),
+                        list.classList.remove("opacity-100"));
+
+            }
+        </script>
+    </header>
+    <!-- HEADER SECTION end -->
+
+    <!-- MAIN SECTION Start-->
+    <main>
+        <!-- BANNER SECTION Start -->
+        <section
+            style="background-image: url(/static/images/background.jpg); background-size: cover;">
+            <ul class="container flex p-5 text-white font-bold">
+                <li>
+                    home
+                </li>
+                <li class="pl-5">
+                    Web Site Design
+                </li>
+            </ul>
+            <h1 class="text-white text-5xl font-bold text-center">World's #1 Web Design</h1>
+            <ul class="lg:flex flex-wrap justify-center text-center">
+                <li class="text-white p-10 font-bold">
+                    <i class='bx bxs-star text-yellow-500'></i>
+                    24/7 Customer Support
+                </li>
+                <li class="text-white p-10 font-bold">
+                    <i class='bx bxs-star text-yellow-500'></i>
+                    Get 70+ design within 7 days
+                </li>
+                <li class="text-white p-10 font-bold">
+                    <i class='bx bxs-star text-yellow-500'></i>
+                    80000+ Website Designers
+                </li>
+                <li class="text-white p-10 font-bold">
+                    <i class='bx bxs-star text-yellow-500'></i>
+                    1000000+ Satisfied Customers
+                </li>
+            </ul>
+            <h1 class="text-white text-5xl font-bold text-center mx-5">What Are You Looking For?</h1>
+            <div class="text-center my-5">
+                <button class=" text-white font-bold bg-blue-700 px-6 py-3  rounded-full">
+                    Get Started Now
+                </button>
+                <button class=" text-blue-700 font-bold bg-white px-6 py-3 my-3 rounded-full">
+                    How It Works
+                </button>
+            </div>
+            <ul class="flex justify-center space-x-2">
+                <li>
+                    <i class='bx bxs-star text-yellow-500'></i>
+                </li>
+                <li>
+                    <i class='bx bxs-star text-yellow-500'></i>
+                </li>
+                <li>
+                    <i class='bx bxs-star text-yellow-500'></i>
+                </li>
+                <li>
+                    <i class='bx bxs-star text-yellow-500'></i>
+                </li>
+                <li>
+                    <i class='bx bxs-star text-yellow-500'></i>
+                </li>
+            </ul>
+            <div class=" text-center mx-5 mt-5 text-white text-sm  ">
+                <p>
+                    check out our
+                    <a class="text-yellow-400" href="#">
+                        reviews (4.95/5 average from 34235 rating)
+                    </a>
+                </p>
+                <p class="py-6">
+                    2434 reviews<i class='bx bxs-star text-yellow-500'></i>toolup
+                </p>
+            </div>
+        </section>
+        <!-- BANNER SECTION end -->
+
+        <!-- CARDS SECTION Start -->
+        <section>
+            <h1 class="text-center mt-32 mb-6 text-4xl font-bold">HOW TO WEBSITE DESIGN CONTEST WORKS</h1>
+            <div class="flex flex-wrap justify-center ">
+                <div class="p-4 lg:w-1/3">
+                    <div class="text-center ">
+                        <button class="border border-black rounded-full mb-6 px-2">
+                            1
+                        </button>
+                        <img src="/static/images/computer1.webp"
+                            alt="hola computer">
+                        <p class="font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis,
+                            nostrum.</p>
+                        <p class="font-light text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+                            esse, id pariatur excepturi voluptates consectetur, velit soluta iste eum, totam expedita
+                            nostrum. Quibusdam ullam tempora placeat suscipit eius est aperiam!</p>
+                        <a class="text-indigo-700 inline-flex intems-center mb-6" href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/3">
+                    <div class="text-center ">
+                        <button class="border border-black rounded-full mb-6 px-2">
+                            2
+                        </button>
+                        <img src="/static/images/computer2.webp"
+                            alt="hola computer">
+                        <p class="font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis,
+                            nostrum.</p>
+                        <p class="font-light text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+                            esse, id pariatur excepturi voluptates consectetur, velit soluta iste eum, totam expedita
+                            nostrum. Quibusdam ullam tempora placeat suscipit eius est aperiam!</p>
+                        <a class="text-indigo-700 inline-flex intems-center mb-6" href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/3">
+                    <div class="text-center ">
+                        <button class="border border-black rounded-full mb-6 px-2">
+                            3
+                        </button>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yB9ZStWVaSbYbdydS56u4wAAAA%26pid%3DApi&f=1&ipt=8f8558daf7bab4504f8bb989ed26195e75c4efb2ed374ae0d2d0908b07c5e23f&ipo=images" alt="hola computer">
+                        <p class="font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis,
+                            nostrum.</p>
+                        <p class="font-light text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+                            esse, id pariatur excepturi voluptates consectetur, velit soluta iste eum, totam expedita
+                            nostrum. Quibusdam ullam tempora placeat suscipit eius est aperiam!</p>
+                        <a class="text-indigo-700 inline-flex intems-center mb-6" href="#">Learn more</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- CARDS SECTION end -->
+
+        <!-- BLOG SECTION Start -->
+        <section>
+            <div class="container mb-20">
+
+                <div class="lg:flex lg:justify-center lg:items-center mx-5 text-center">
+
+                    <img class="lg:w-1/2 w-full lg:h-auto"
+                        src="/static/images/completedesign.png" alt="computer">
+
+                    <div class="lg:w-1/2 w-full ">
+                        <h1 class="font-bold lg:text-4xl text-2xl font-sans">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, quam!
+                        </h1>
+                        <p class="text-sm">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit modi repellat
+                            numquam inventore magni mollitia eligendi corrupti veritatis voluptatibus, odit dolorem
+                            culpa sint porro soluta perferendis blanditiis animi. Excepturi, facere. Similique inventore
+                            voluptate in quasi, officia impedit, neque dolorum sapiente cum tenetur cupiditate porro
+                            iure itaque explicabo quis nulla! Accusantium, reiciendis unde eum officia provident
+                            architecto! Praesentium necessitatibus sit maxime ratione dolores consequatur obcaecati
+                            debitis. Ipsa, dicta quis obcaecati fuga cupiditate eum voluptatum harum expedita, vero
+                            rerum, unde voluptatibus! Deserunt perferendis veniam excepturi vel tenetur distinctio
+                            quibusdam inventore voluptatibus, ut at placeat nisi commodi! Aperiam necessitatibus eaque
+                            non distinctio neque!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BLOG SECTION end -->
+
+    </main>
+    <!-- MAIN SECTION end -->
+
+    <!-- FOOTER SECTION Start-->
+    <footer class="bg-blue-700">
+        <section class="px-5 py-4 mx-auto">
+            <div class="flex flex-wrap md:text-left text-center mx-4 ">
+                <div class="lg:w-1/6 w-full md:w-1/2 text-white">
+                <h2 class=" tracking-widest text-xl mb-3 ">Courses</h2>
+                    <ul class="list-none mb-5">
+                        <li>
+                            First
+                        </li>
+                        <li>
+                            Second
+                        </li>
+                        <li>
+                            Third
+                        </li>
+                        <li>
+                            Fourth
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="lg:w-1/6 w-full md:w-1/2 text-white">
+                <h2 class=" tracking-widest text-xl mb-3 ">Courses</h2>
+                    <ul class="list-none mb-5">
+                        <li>
+                            First
+                        </li>
+                        <li>
+                            Second
+                        </li>
+                        <li>
+                            Third
+                        </li>
+                        <li>
+                            Fourth
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="lg:w-1/6 w-full md:w-1/2 text-white">
+                <h2 class=" tracking-widest text-xl mb-3 ">Courses</h2>
+                    <ul class="list-none mb-5">
+                        <li>
+                            First
+                        </li>
+                        <li>
+                            Second
+                        </li>
+                        <li>
+                            Third
+                        </li>
+                        <li>
+                            Fourth
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="lg:w-1/6 w-full md:w-1/2 text-white">
+                <h2 class=" tracking-widest text-xl mb-3 ">Courses</h2>
+                    <ul class="list-none mb-5">
+                        <li>
+                            First
+                        </li>
+                        <li>
+                            Second
+                        </li>
+                        <li>
+                            Third
+                        </li>
+                        <li>
+                            Fourth
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="lg:w-1/6 w-full md:w-1/2 text-white">
+                <h2 class=" tracking-widest text-xl mb-3 ">Courses</h2>
+                    <ul class="list-none mb-5">
+                        <li>
+                            First
+                        </li>
+                        <li>
+                            Second
+                        </li>
+                        <li>
+                            Third
+                        </li>
+                        <li>
+                            Fourth
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="lg:w-1/6 w-full md:w-1/2 text-white">
+                <h2 class=" tracking-widest text-xl mb-3 ">Courses</h2>
+                    <ul class="list-none mb-5">
+                        <li>
+                            First
+                        </li>
+                        <li>
+                            Second
+                        </li>
+                        <li>
+                            Third
+                        </li>
+                        <li>
+                            Fourth
+                        </li>
+                    </ul>
+
+                </div>
+                
+            </div>
+        </section>
+        <section class="text-center">
+            <h2 class="text-white tracking-widest text-xl mb-3 ">
+                Follow Us
+            </h2>
+            <span>
+                <ul class="flex justify-center space-x-10 pb-5 text-white">
+                    <li>
+                        <a href="https://github.com/JOEL18VEGAS" target="_blank"><i class='bx bxl-github text-5xl' ></i></a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=573017218540" target="_blank"><i class='bx bxl-whatsapp text-5xl ' ></i></a>
+                    </li>
+                    <li>
+                        <a href="https://xn--r1a.click/JOEL18VEGAS" target="_blank"><i class='bx bxl-telegram text-5xl' ></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/joel19vegas/" target="_blank" ><i class='bx bxl-linkedin-square text-5xl' ></i></a>
+                    </li>
+                </ul>
+            </span>
+        </section>
+    </footer>
+    <!-- FOOTER SECTION end -->
+</body>
+
+</html>
